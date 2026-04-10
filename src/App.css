@@ -640,8 +640,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
+  /* background: var(--border);
+  border: 1px solid var(--border); */
 }
 
 .svc {
@@ -650,6 +650,7 @@ body {
   position: relative;
   overflow: hidden;
   transition: background .3s, transform .25s;
+  border: 1px solid var(--border);
 }
 
 .svc::after {
@@ -926,6 +927,9 @@ body {
 
 /* Tablet */
 @media (max-width: 768px) {
+  footer.ftr {
+    padding: 60px 20px;
+}
   .faqlist {
     gap: 14px;
     max-width: 100%;
@@ -1165,7 +1169,7 @@ body {
 /* TABLET */
 @media (max-width: 992px) {
   .ftrtop {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
