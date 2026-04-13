@@ -1,13 +1,16 @@
 import { useEffect } from "react";
 
-export default function UseScrollAnimation() {
+export default function useScrollAnimation() {
   useEffect(() => {
     const elements = document.querySelectorAll(".animate-on-scroll");
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          entry.target.classList.toggle("visible", entry.isIntersecting);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target); // ✅ IMPORTANT FIX
+          }
         });
       },
       { threshold: 0.2 }
@@ -15,8 +18,6 @@ export default function UseScrollAnimation() {
 
     elements.forEach((el) => observer.observe(el));
 
-    return () => {
-      elements.forEach((el) => observer.unobserve(el));
-    };
+    return () => observer.disconnect();
   }, []);
 }

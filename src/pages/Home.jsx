@@ -25,7 +25,7 @@ export default function Home({
     }
   ];
 
-  useScrollAnimation();
+  // useScrollAnimation();
 
   return (
     <>
