@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "./Components/Header";
 import Home from "./pages/Home";
 import Footer from "./Components/Footer";
+import useScrollAnimation from "./pages/UseScrollAnimation";
 import "./App.css";
 
 export const MQ = [
