@@ -21,8 +21,15 @@ export default function Footer() {
           {/* CONTACT */}
           <div className="ftrinfo">
             <h4>Contact</h4>
-            <a href="tel:+61000000000">
-              <i className="fa-solid fa-phone"></i> +61 000 000 000
+            <a href="tel:+61 416 461 094">
+              <i className="fa-solid fa-phone"></i> +61 416 461 094
+            </a>
+          </div>
+          {/* Email */}
+          <div className="ftrinfo">
+            <h4>Email</h4>
+            <a href="mailto:alaka.satapathy@digiware.com.au">
+              <i className="fa-solid fa-envelope"></i> alaka.satapathy@digiware.com.au
             </a>
           </div>
 
@@ -31,16 +38,16 @@ export default function Footer() {
             <h4>Follow Us</h4>
 
             <div className="ftrsocial">
-              <a href="#" className="social-btn">
+              <a href="https://www.instagram.com/24pods1?utm_source=qr&igsh=MWw1d21lMHJkNmJqcQ%3D%3D" className="social-btn">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" className="social-btn">
+              <a href="https://www.facebook.com/people/24-Pods/61579069562747/" className="social-btn">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="social-btn">
+              <a href="https://www.linkedin.com/company/108916453/admin/dashboard/" className="social-btn">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="#" className="social-btn">
+              <a href="https://www.youtube.com/@24pods" className="social-btn">
                 <i className="fab fa-youtube"></i>
               </a>
             </div>

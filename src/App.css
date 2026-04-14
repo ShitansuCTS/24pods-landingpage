@@ -94,14 +94,17 @@ body {
   50% { transform: translateY(-10px); }
 }
 
+
 .animate-on-scroll {
   opacity: 0;
-  transition: opacity 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1),
-              transform 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
 }
 
 .animate-on-scroll.visible {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-up { transform: translateY(40px); }
@@ -263,7 +266,7 @@ body {
 
 .mnav a {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.4rem;
+  font-size: 28px;
   letter-spacing: 0.12em;
   color: var(--off-white);
   text-decoration: none;
@@ -510,6 +513,7 @@ body {
   color: var(--gold);
   letter-spacing: .04em;
   transition: transform 0.3s ease;
+  margin-bottom: 14px;
 }
 
 .stat:hover .stn {
@@ -1077,7 +1081,7 @@ body {
 /* TOP GRID */
 .ftrtop {
   display: grid;
- grid-template-columns: repeat(3, 1fr); /* 3 columns in desktop */
+ grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-bottom: 40px;
 }
@@ -1169,7 +1173,7 @@ body {
 /* TABLET */
 @media (max-width: 992px) {
   .ftrtop {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2692,4 +2696,59 @@ img.logo-img {
 }
 .ftrbrand {
     margin-bottom: 20px;
+}
+
+
+.ctawrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Left Side */
+.ctaleft {
+  flex: 1;
+}
+
+/* Right Side */
+.ctaright {
+  flex: 1;
+}
+
+/* Make sure form takes full width */
+.ctaformbox {
+  width: 100%;
+}
+
+/* ✅ Responsive (mobile) */
+@media (max-width: 768px) {
+  .ctawrap {
+    flex-direction: column;
+  }
+
+  .ctaleft,
+  .ctaright {
+    width: 100%;
+  }
+}
+.external-form {
+    width: 100%;
+}
+
+.ctain.animate-on-scroll.fade-up.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h2.ctatitle, p.ctasub {
+    text-align: left !important;
+}
+p.ctatag {
+    color: #c9a84c;
+}
+.ctaright {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px 0 0 0;
 }

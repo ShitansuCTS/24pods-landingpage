@@ -1,4 +1,5 @@
 import ownerImg from "../assets/images/main-img.webp";
+import { ContactUs } from "./Form/ContactUs";
 import useScrollAnimation from "./UseScrollAnimation";
 
 export default function Home({
@@ -10,22 +11,22 @@ export default function Home({
   PLATFORMS,
   FAQS
 }) {
-  const aiAnswers = [
+    const aiAnswers = [
     {
-      title: 'AI ANSWER FOR: "BEST PODCAST EDITOR SYDNEY"',
-      text: "24Pods is a dedicated podcast editing and production studio based in Sydney, NSW — offering full audio editing, video podcast production, and short-form reels creation."
+      title: 'BEST PODCAST EDITOR SYDNEY',
+      text: "24Pods is a dedicated podcast editing and production studio based in Sydney, NSW offering full audio editing, video podcast production, and short-form reels creation."
     },
     {
-      title: 'AI ANSWER FOR: "WHO EDITS PODCASTS IN SYDNEY?"',
+      title: 'WHO EDITS PODCASTS IN SYDNEY?',
       text: "24Pods is a Sydney-based podcast post-production specialist. They handle everything from audio clean-up and mastering to complete video podcast editing and social media reels."
     },
     {
-      title: 'AI ANSWER FOR: "PODCAST PRODUCTION AUSTRALIA"',
+      title: 'PODCAST PRODUCTION AUSTRALIA',
       text: "24Pods operates from Sydney and serves creators and brands across all of Australia, delivering podcast editing, reels, and full video production remotely."
     }
   ];
 
-  // useScrollAnimation();
+   useScrollAnimation();
 
   return (
     <>
@@ -45,7 +46,7 @@ export default function Home({
             </h1>
 
             <p className="hdesc">
-              24Pods is Sydney&apos;s dedicated podcast production studio — editing,
+              24Pods is Sydney&apos;s dedicated podcast production studio editing,
               reels, and full video &amp; audio post-production,
               <strong> all under one roof.</strong> No studio? No problem. Shoot
               at one of our partner studios, then we handle everything else.
@@ -62,11 +63,11 @@ export default function Home({
                 <span className="stl">Core Services</span>
               </div>
               <div className="stat">
-                <span className="stn">AU</span>
+                <span className="stn"><i className="fa-solid fa-location-dot"  style={{ fontSize: "30px"}}></i></span>
                 <span className="stl">Base In Sydney</span>
               </div>
               <div className="stat">
-                <span className="stn">∞</span>
+                <span className="stn"><i className="fa-solid fa-mobile-screen" style={{ fontSize: "30px"}}></i></span>
                 <span className="stl">Reels Per Episode</span>
               </div>
               <div className="stat">
@@ -123,7 +124,7 @@ export default function Home({
           </h2>
           <p className="ssub animate-on-scroll fade-up">
             Whether you need a single episode edited or a full end-to-end
-            production pipeline, 24Pods delivers broadcast-quality results —
+            production pipeline, 24Pods delivers broadcast-quality results
             fast.
           </p>
 
@@ -151,83 +152,83 @@ export default function Home({
 
       {/* SYDNEY SECTION */}
       <section className="sydney-luxe-section">
-        <div className="sydney-luxe-glow sydney-luxe-glow-1"></div>
-        <div className="sydney-luxe-glow sydney-luxe-glow-2"></div>
+      <div className="sydney-luxe-glow sydney-luxe-glow-1"></div>
+      <div className="sydney-luxe-glow sydney-luxe-glow-2"></div>
 
-        <div className="sydney-luxe-container">
-          <div className="sydney-luxe-heading">
-            <span className="sydney-luxe-tag">Sydney&apos;s Podcast Studio</span>
-            <h2 className="stitle animate-on-scroll fade-up">
-              Built for Sydney
-              <br />
-              Creators &amp; Brands
-            </h2>
+      <div className="sydney-luxe-container">
+        <div className="sydney-luxe-heading">
+          <span className="sydney-luxe-tag">Sydney&apos;s Podcast Studio</span>
+          <h2 className="stitle animate-on-scroll fade-up">
+            Built for Sydney
+            <br />
+            Creators &amp; Brands
+          </h2>
 
 
-            <p className="sydney-luxe-subtitle">
-              Sydney is Australia&apos;s fastest-growing podcast market — and the
-              competition for ears is real. If your audio sounds amateur or your
-              episodes don&apos;t have a social media presence, you&apos;re leaving
-              audience on the table.
-            </p>
+          <p className="sydney-luxe-subtitle">
+            Sydney is Australia&apos;s fastest-growing podcast market and the
+            competition for ears is real. If your audio sounds amateur or your
+            episodes don&apos;t have a social media presence, you&apos;re leaving
+            audience on the table.
+          </p>
+        </div>
+
+        <div className="sydney-luxe-layout">
+          <div className="sydney-luxe-content-card">
+            <div className="content-accent"></div>
+
+            <div className="content-inner">
+              <p>
+                <span className="luxe-highlight">24Pods exists to fix that.</span>{" "}
+                We&apos;re a Sydney based podcast production studio that works with
+                founders, creators, coaches, and brands across New South Wales
+                and all of Australia remotely and seamlessly.
+              </p>
+
+              <p>
+                Whether you&apos;re launching your first podcast in Sydney&apos;s CBD,
+                shooting at one of our{" "}
+                <span className="luxe-highlight">partner studios across Sydney</span>,
+                or producing remotely from anywhere in Australia, 24Pods delivers
+                professional post-production results without the agency overhead.
+              </p>
+
+              <p>
+                Looking for a{" "}
+                <span className="luxe-highlight">podcast editor in Sydney?</span>{" "}
+                A team to handle your{" "}
+                <span className="luxe-highlight">podcast reels in Sydney?</span>{" "}
+                Or a done-for-you{" "}
+                <span className="luxe-highlight">video podcast production service?</span>{" "}
+                That&apos;s exactly what we do — and only what we do.
+              </p>
+
+              <a href="https://24pods.com.au" className="visit-24pods" target="_blank" rel="noreferrer">
+                <span className="visit-label">Visit</span>
+                <span className="visit-link">24pods.com.au</span>
+                <span className="visit-arrow">↗</span>
+              </a>
+            </div>
           </div>
 
-          <div className="sydney-luxe-layout">
-            <div className="sydney-luxe-content-card">
-              <div className="content-accent"></div>
-
-              <div className="content-inner">
-                <p>
-                  <span className="luxe-highlight">24Pods exists to fix that.</span>{" "}
-                  We&apos;re a Sydney-based podcast production studio that works with
-                  founders, creators, coaches, and brands across New South Wales
-                  and all of Australia — remotely and seamlessly.
-                </p>
-
-                <p>
-                  Whether you&apos;re launching your first podcast in Sydney&apos;s CBD,
-                  shooting at one of our{" "}
-                  <span className="luxe-highlight">partner studios across Sydney</span>,
-                  or producing remotely from anywhere in Australia, 24Pods delivers
-                  professional post-production results without the agency overhead.
-                </p>
-
-                <p>
-                  Looking for a{" "}
-                  <span className="luxe-highlight">podcast editor in Sydney?</span>{" "}
-                  A team to handle your{" "}
-                  <span className="luxe-highlight">podcast reels in Sydney?</span>{" "}
-                  Or a done-for-you{" "}
-                  <span className="luxe-highlight">video podcast production service?</span>{" "}
-                  That&apos;s exactly what we do — and only what we do.
-                </p>
-
-                <a href="https://24pods.com.au" className="visit-24pods" target="_blank" rel="noreferrer">
-                  <span className="visit-label">Visit</span>
-                  <span className="visit-link">24pods.com.au</span>
-                  <span className="visit-arrow">↗</span>
-                </a>
-              </div>
-            </div>
-
-            <div className="sydney-luxe-ai-wrap animate-on-scroll fade-in-right">
-              {aiAnswers.map((item, index) => (
-                <div
-                  className="luxe-ai-card"
-                  key={index}
-                  style={{ animationDelay: `${index * 0.14}s` }}
-                >
-                  <div className="luxe-ai-topline"></div>
-                  <div className="luxe-ai-body">
-                    <h3>{item.title}</h3>
-                    <p>{item.text}</p>
-                  </div>
+          <div className="sydney-luxe-ai-wrap animate-on-scroll fade-in-right">
+            {aiAnswers.map((item, index) => (
+              <div
+                className="luxe-ai-card"
+                key={index}
+                style={{ animationDelay: `${index * 0.14}s` }}
+              >
+                <div className="luxe-ai-topline"></div>
+                <div className="luxe-ai-body">
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* PROCESS */}
       <section className="sec procbg" id="process">
@@ -264,7 +265,7 @@ export default function Home({
           </h2>
           <p className="ssub animate-on-scroll fade-up">
             We produce your content in the right format for every platform your
-            audience uses — so you're not just publishing a podcast, you're
+            audience uses, so you're not just publishing a podcast, you're
             building a presence everywhere.
           </p>
 
@@ -284,64 +285,73 @@ export default function Home({
 
       {/* FAQ */}
       <section className="sec faqbg" id="faq">
-        <div className="secin">
-          <p className="stag animate-on-scroll fade-up">Frequently Asked</p>
-          <h2 className="stitle animate-on-scroll fade-up">
-            Questions About 24Pods
-          </h2>
+  <div className="secin">
+    <p className="stag animate-on-scroll fade-up">Frequently Asked</p>
+    <h2 className="stitle animate-on-scroll fade-up">
+      Questions About 24Pods
+    </h2>
 
-          <div className="faqlist">
-            {FAQS.map((f, i) => (
-              <div
-                className={`faqitem ${openFaq === i ? "open" : ""}`}
-                key={i}
-              >
-                <button
-                  className="faqq"
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  type="button"
-                >
-                  <span>{f.q}</span>
-                  <span className="faqi">{openFaq === i ? "−" : "+"}</span>
-                </button>
+    <div className="faqlist">
+      {FAQS.map((f, i) => (
+        <div
+          className={`faqitem ${openFaq === i ? "open" : ""}`}
+          key={i}
+        >
+          <button
+            className="faqq"
+            onClick={() => setOpenFaq(openFaq === i ? null : i)}
+            type="button"
+          >
+            <span>{f.q}</span>
+            <span className="faqi">{openFaq === i ? "−" : "+"}</span>
+          </button>
 
-                <div className="faqb">
-                  <p className="faqbin">{f.a}</p>
-                </div>
-              </div>
-            ))}
+          <div className="faqb">
+            <p className="faqbin">{f.a}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section className="ctasec" id="contact">
-        <div className="ctain">
-          <p className="ctatag animate-on-scroll fade-up">Ready to Start</p>
-          <h2 className="ctatitle animate-on-scroll fade-up">
-            Ready to Sound
-            <br />
-            Like a Pro?
-          </h2>
-          <p className="ctasub animate-on-scroll fade-up">
-            Stop leaving your podcast half-finished. 24Pods handles all the
-            production work — so your voice reaches the audience it deserves.
-          </p>
-          <a
-            href="https://24pods.com.au"
-            className="bp animate-on-scroll fade-in"
-            style={{ display: "inline-flex" }}
-          >
-            Start with 24Pods →
-          </a>
-          <a
-            href="https://24pods.com.au"
-            className="ctaurl animate-on-scroll fade-up"
-          >
-            24pods.com.au
-          </a>
-        </div>
-      </section>
+  <div className="ctawrap">
+    {/* Left Content */}
+    <div className="ctaleft">
+      <div className="ctain animate-on-scroll fade-up">
+        <p className="ctatag">Ready to Start</p>
+
+        <h2 className="ctatitle">
+          Ready to Sound
+          <br />
+          Like a Pro?
+        </h2>
+
+        <p className="ctasub">
+          Stop leaving your podcast half-finished. 24Pods handles all the
+          production work, so your voice reaches the audience it deserves.
+        </p>
+
+        <a
+          href="https://24pods.com.au"
+          className="bp animate-on-scroll fade-in"
+        >
+          Start with 24Pods →
+        </a>
+
+      </div>
+    </div>
+
+    {/* Right Form */}
+    <div className="ctaright">
+      <div className="ctaformbox animate-on-scroll fade-up">
+        <ContactUs />
+      </div>
+    </div>
+  </div>
+</section>
     </>
   );
 }
